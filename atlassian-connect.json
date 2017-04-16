@@ -1,31 +1,29 @@
 {
-    "name": "Hello World",
-    "description": "Atlassian Connect add-on",
-    "key": "com.example.myaddon",
-    "baseUrl": "https://13.65.35.217/julien",
-    "vendor": {
-        "name": "Example, Inc.  read scope",
-        "url": "http://example.com"
-    },
-    "authentication": {
-        "type": "none"
-    },
-    "apiVersion": 1,
-    "modules": {
-		"webhooks": [
-	      {
-	        "event": "page_updated",
-	        "url": "/receiver.php",
-	        "excludeBody": false,
-	        "filter": "",
-	        "propertyKeys": [
-	          "propertyKey",
-	          "otherPropertyKey"
-	        ]
-	      }
-	    ]
-    },
+	"name": "Hello World",
+	"description": "Atlassian Connect add-on",
+	"key": "com.example.myaddon",
+	"baseUrl": "https://13.65.35.217/julien",
+	"vendor": {
+		"name": "Example, Inc.  read scope",
+		"url": "http://example.com"
+	},
+	"authentication": {
+		"type": "none"
+	},
+	"apiVersion": 1,
+	"modules": {
+		"webhooks": [{
+			"event": "page_updated",
+			"url": "/receiver.php",
+			"excludeBody": false,
+			"filter": "",
+			"propertyKeys": [
+				"propertyKey",
+				"otherPropertyKey"
+			]
+		}]
+	},
 	"scopes": [
-        "read"
-    ]
+		"read"
+	]
 }
